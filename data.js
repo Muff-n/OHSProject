@@ -44,8 +44,8 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 2.1544206249658355,
-          "pitch": 0.08775620638212267,
+          "yaw": 2.215583611095317,
+          "pitch": 0.14997575759649884,
           "title": "Snedecor Family<br>",
           "text": "<br>"
         },
@@ -119,20 +119,20 @@ var APP_DATA = {
           "text": "<br>"
         },
         {
-          "yaw": 1.839135098328268,
-          "pitch": -0.01706207038800933,
+          "yaw": 1.8698869188589287,
+          "pitch": 0.023611809222419566,
           "title": "William Mazurie<br>",
           "text": "<br>"
         },
         {
-          "yaw": -0.32535480087363666,
-          "pitch": 0.005699641762019425,
+          "yaw": -0.3404266653327621,
+          "pitch": 0.025068765839055374,
           "title": "Penelope Price<br>",
           "text": "<br>"
         },
         {
-          "yaw": -1.3198474231271824,
-          "pitch": -0.0037131798698535334,
+          "yaw": -1.3025638544195388,
+          "pitch": 0.062210008221597946,
           "title": "Sarah Jane Burgess Edwards<br>",
           "text": "<br>"
         }
@@ -168,8 +168,8 @@ var APP_DATA = {
       },
       "linkHotspots": [
         {
-          "yaw": 0.0014705370070373647,
-          "pitch": -0.038328266671541655,
+          "yaw": 0.012183232067830119,
+          "pitch": -0.042471078632189574,
           "rotation": 4.71238898038469,
           "target": "0-church-exterior-front"
         }
