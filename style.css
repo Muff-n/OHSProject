@@ -48,6 +48,7 @@ a, a:hover, a:active, a:visited {
   left: 0;
   right: 40px;
   height: 40px;
+  font-family: "Open Sans";
   text-align: center;
 }
 
