@@ -37,8 +37,10 @@
         document.body.classList.remove('desktop');
         document.body.classList.add('mobile');
       } else {
-        document.body.classList.remove('mobile');
-        document.body.classList.add('desktop');
+        //document.body.classList.remove('mobile');
+        //document.body.classList.add('desktop');
+        document.body.classList.remove('desktop');
+        document.body.classList.add('mobile');
       }
     };
     var mql = matchMedia("(max-width: 500px), (max-height: 500px)");
