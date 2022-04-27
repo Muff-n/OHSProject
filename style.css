@@ -46,13 +46,32 @@ a, a:hover, a:active, a:visited {
   position: absolute;
   top: 0;
   left: 0;
+  right: 40px;
   height: 40px;
-  width: 100%;
   text-align: center;
 }
 
 .mobile #titleBar {
   height: 50px;
+  right: 50px;
+}
+
+/* If there is a fullscreen button the title bar must make space for it */
+body.fullscreen-enabled #titleBar {
+  right: 80px;
+}
+
+body.fullscreen-enabled.mobile #titleBar {
+  right: 100px;
+}
+
+/* If there are multiple scenes the title bar must make space for the scene list toggle */
+body.multiple-scenes #titleBar {
+  left: 40px;
+}
+
+body.multiple-scenes.mobile #titleBar {
+  left: 50px;
 }
 
 #titleBar .sceneName {
