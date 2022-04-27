@@ -342,16 +342,31 @@
     modal.classList.add('info-hotspot-modal');
     document.body.appendChild(modal);
 
-    var toggle = function() {
+    var toggleClose = function() {
       wrapper.classList.toggle('visible');
       modal.classList.toggle('visible');
     };
 
+    var toggleInvisible = function() {
+      var openBubbles = document.getElementsByClassName("info-hotspot-modal visible")
+      for (var i=0; i < openBubbles.length; i++){
+        openBubbles[i].classList.toggle('visible');
+      }
+    };
+
+    var toggle = function() {
+      toggleInvisible();
+      toggleClose();
+    };
+
     // Show content when hotspot is clicked.
+    var newSceneLinks = document.getElementsByClassName("hotspot link-hotspot");
+    for(var i=0; i < newSceneLinks.length; i++)
+      newSceneLinks[i].addEventListener('click', toggleInvisible);
     wrapper.querySelector('.info-hotspot-header').addEventListener('click', toggle);
 
     // Hide content when close icon is clicked.
-    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggle);
+    modal.querySelector('.info-hotspot-close-wrapper').addEventListener('click', toggleClose);
 
     // Prevent touch and scroll events from reaching the parent element.
     // This prevents the view control logic from interfering with the hotspot.
