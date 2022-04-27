@@ -31,7 +31,7 @@ var APP_DATA = {
       "linkHotspots": [
         {
           "yaw": -1.7033089607261456,
-          "pitch": 0.07069206833155661,
+          "pitch": 0.17069206833155661,
           "rotation": 11.780972450961727,
           "target": "2-church-interior"
         },
