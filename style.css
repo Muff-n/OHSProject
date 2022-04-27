@@ -189,11 +189,11 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #autorotateToggle .icon.off {
-  display: block;
+  display: none;
 }
 
 #autorotateToggle.enabled .icon.on {
-  display: block;
+  display: none;
 }
 
 #autorotateToggle.enabled .icon.off {
@@ -242,11 +242,11 @@ body.fullscreen-enabled.mobile #autorotateToggle {
 }
 
 #sceneListToggle .icon.off {
-  display: block;
+  display: none;
 }
 
 #sceneListToggle.enabled .icon.on {
-  display: block;
+  display: none;
 }
 
 #sceneListToggle.enabled .icon.off {
