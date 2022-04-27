@@ -1,9 +1,9 @@
-@import url(/Fonts/Proximanova/Regular/styles.css);
-@import url(/Fonts/Proximanova/Regularit/styles.css);
-@import url(/Fonts/Proximanova/Light/styles.css);
-@import url(/Fonts/Proximanova/Lightit/styles.css);
-@import url(/Fonts/Proximanova/Bold/styles.css);
-@import url(/Fonts/Proximanova/Boldit/styles.css);
+@import url(Fonts/Proximanova/Regular/styles.css);
+@import url(Fonts/Proximanova/Regularit/styles.css);
+@import url(Fonts/Proximanova/Light/styles.css);
+@import url(Fonts/Proximanova/Lightit/styles.css);
+@import url(Fonts/Proximanova/Bold/styles.css);
+@import url(Fonts/Proximanova/Boldit/styles.css);
 @import url(Fonts/orpheuspro/styles.css);
 * {
   -webkit-box-sizing: border-box;
