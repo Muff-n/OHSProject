@@ -47,7 +47,8 @@
     setMode();
     mql.addListener(setMode);
   } else {
-    document.body.classList.add('desktop');
+    //document.body.classList.add('desktop');
+    document.body.classList.add('mobile');
   }
 
   // Detect whether we are on a touch device.
