@@ -57,6 +57,7 @@ a, a:hover, a:active, a:visited {
   height: 40px;
   text-align: center;
   font-family: OrpheusPro-Bold, Linden Hill, serif;
+  font-size: 22px;
 }
 
 .mobile #titleBar {
