@@ -691,7 +691,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   -webkit-transition: opacity 0.3s ease-in-out 0.2s;
   transition: opacity 0.3s ease-in-out 0.2s;
   font-family: OrpheusPro-Bold, Linden Hill, serif;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
 }
 
