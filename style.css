@@ -444,10 +444,6 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   transition: opacity 0.2s;
 }
 
-.info-hotspot.visible {
-  opacity: 1;
-}
-
 .info-hotspot .info-hotspot-header {
   width: 40px;
   height: 40px;
