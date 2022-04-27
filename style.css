@@ -71,7 +71,8 @@ body.multiple-scenes #titleBar {
 }
 
 body.multiple-scenes.mobile #titleBar {
-  left: 50px;
+  left: 0;
+  right: 0;
 }
 
 #titleBar .sceneName {
