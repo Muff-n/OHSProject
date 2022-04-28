@@ -97,7 +97,7 @@ var APP_DATA = {
         {
           "yaw": 0.26469842234173946,
           "pitch": 0.0593380063114477,
-          "title": "Memorial<br>",
+          "title": "The Memorial<br>",
           "text": "<br>"
         },
         {
@@ -178,13 +178,13 @@ var APP_DATA = {
         {
           "yaw": 3.134921780192391,
           "pitch": 0.07856293802918302,
-          "title": "Altar",
+          "title": "The Altar",
           "text": "<br>"
         },
         {
           "yaw": -2.7197054240811465,
           "pitch": -0.5643676737882704,
-          "title": "Balcony",
+          "title": "The Gallery",
           "text": "<br>"
         }
       ]
