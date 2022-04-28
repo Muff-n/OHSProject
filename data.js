@@ -52,7 +52,7 @@ var APP_DATA = {
         {
           "yaw": -1.0259125131870235,
           "pitch": -0.01462544684946998,
-          "title": "Terry Family<br>",
+          "title": "William Terry Family<br>",
           "text": "<br>"
         }
       ]
@@ -109,7 +109,7 @@ var APP_DATA = {
         {
           "yaw": 3.1008290775575205,
           "pitch": 0.005598976777411835,
-          "title": "Jeremiah Terry<br>",
+          "title": "Jeremiah Terry Family<br>",
           "text": "<br>"
         },
         {
