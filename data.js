@@ -103,7 +103,7 @@ var APP_DATA = {
         {
           "yaw": -2.500867273919761,
           "pitch": -0.007108409667695881,
-          "title": "Ludlow Plot<br>",
+          "title": "Ludlow Family<br>",
           "text": "<br>"
         },
         {
