@@ -97,6 +97,7 @@ body.multiple-scenes.mobile #titleBar {
   -webkit-user-select: text;
   -ms-user-select: text;
   user-select: text;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
 }
 
 .mobile #titleBar .sceneName {
@@ -855,7 +856,7 @@ body.view-control-buttons .viewControlButton {
   position: absolute;
   left: 40px;
   bottom: 55px;
-  box-shadow: 5px 5px black;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
 }
 .button:hover {
   background: #1E1514;
