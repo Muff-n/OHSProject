@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'OrpheusPro-Bold';
+	src: url('OrpheusPro-Bold.eot') format('eot'),
+	     url('OrpheusPro-Bold.woff') format('woff'), 
+	     url('OrpheusPro-Bold.ttf')  format('truetype'),
+	     url('OrpheusPro-Bold.svg') format('svg');
+}
