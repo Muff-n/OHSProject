@@ -854,7 +854,8 @@ body.view-control-buttons .viewControlButton {
   transition: all 0.3s ease-out;
   position: absolute;
   left: 40px;
-  bottom: 55px
+  bottom: 55px;
+  box-shadow: 10px 10px;
 }
 .button:hover {
   background: #1E1514;
