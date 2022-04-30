@@ -884,8 +884,8 @@ body.view-control-buttons .viewControlButton {
   border-radius: 5px;
   transition: all 250ms ease-in-out;
   position:relative;
-  width: 43.75%;
-  height: 93.3%;
+  width: 44.65%;
+  height: 93.5%;
 }
 .popup h2 {
   margin-top: 0;
@@ -893,17 +893,50 @@ body.view-control-buttons .viewControlButton {
 }
 .popup .close {
   position: absolute;
-  top: 0px;
-  right: 10px;
+  top: -15px;
+  right: -17px;
   transition: all 200ms;
   font-size: 50px;
   text-decoration: none;
   color: #44403F;
+  background-color: #000;
 }
 .popup .close:hover {
-  color: #1E1514;
+  color: #fff;
+}.popup .close2 {
+  position: absolute;
+  top: -15px;
+  right: 23px;
+  transition: all 200ms;
+  font-size: 50px;
+  text-decoration: none;
+  color: #44403F;
+  background-color: #000;
+}
+.popup .close2:hover {
+  color: #fff;
+  background-color: #000;
 }
 .popup .content {
   height: inherit;
-  overflow: hidden;
+  overflow: auto;
+}
+
+.aboutButton{
+  font-size: 16px;
+  font-family: ProximaNova-Regular, 'Lato', sans-serif;
+  padding: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  background: #63A15F;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  left: 100px;
+  bottom: 55px;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
+}.aboutButton:hover{
+  background: #013A20;
 }
