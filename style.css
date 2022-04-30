@@ -898,10 +898,10 @@ body.view-control-buttons .viewControlButton {
   transition: all 200ms;
   font-size: 50px;
   text-decoration: none;
-  color: #44403F;
+  color: #fff;
 }
 .popup .close:hover {
-  color: #fff;
+  color: #44403F;
 }.popup .close2 {
   position: absolute;
   top: -15px;
@@ -909,10 +909,10 @@ body.view-control-buttons .viewControlButton {
   transition: all 200ms;
   font-size: 50px;
   text-decoration: none;
-  color: #44403F;
+  color: #fff;
 }
 .popup .close2:hover {
-  color: #fff;
+  color: #44403F;
 }
 .popup .content {
   height: inherit;
