@@ -901,7 +901,7 @@ body.view-control-buttons .viewControlButton {
   color: #fff;
 }
 .popup .close:hover {
-  color: #44403F;
+  color: #ccc;
 }.popup .close2 {
   position: absolute;
   top: -15px;
@@ -912,7 +912,7 @@ body.view-control-buttons .viewControlButton {
   color: #fff;
 }
 .popup .close2:hover {
-  color: #44403F;
+  color: #ccc;
 }
 .popup .content {
   height: inherit;
