@@ -899,7 +899,6 @@ body.view-control-buttons .viewControlButton {
   font-size: 50px;
   text-decoration: none;
   color: #44403F;
-  background-color: #000;
 }
 .popup .close:hover {
   color: #fff;
@@ -911,11 +910,9 @@ body.view-control-buttons .viewControlButton {
   font-size: 50px;
   text-decoration: none;
   color: #44403F;
-  background-color: #000;
 }
 .popup .close2:hover {
   color: #fff;
-  background-color: #000;
 }
 .popup .content {
   height: inherit;
