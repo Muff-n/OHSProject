@@ -843,9 +843,10 @@ body.view-control-buttons .viewControlButton {
 }
 
 .button {
-  font-size: 16px;
+  font-size: 20px;
   font-family: ProximaNova-Regular, 'Lato', sans-serif;
   padding: 10px;
+  width: 7%;
   padding-bottom: 8px;
   color: #fff;
   background: #44403F;
@@ -857,6 +858,7 @@ body.view-control-buttons .viewControlButton {
   left: 40px;
   bottom: 55px;
   box-shadow: 4px 4px rgba(0,0,0,.7);
+  display: inline-block;
 }
 .button:hover {
   background: #1E1514;
@@ -909,7 +911,8 @@ body.view-control-buttons .viewControlButton {
 }
 
 .aboutButton{
-  font-size: 16px;
+  font-size: 20px;
+  width: 7%;
   font-family: ProximaNova-Regular, 'Lato', sans-serif;
   padding: 10px;
   padding-bottom: 8px;
@@ -920,11 +923,31 @@ body.view-control-buttons .viewControlButton {
   cursor: pointer;
   transition: all 0.3s ease-out;
   position: absolute;
-  left: 100px;
+  left: 10%;
   bottom: 55px;
   box-shadow: 4px 4px rgba(0,0,0,.7);
 }.aboutButton:hover{
   background: #013A20;
+}
+
+.locationButton{
+  font-size: 20px;
+  width: 7%;
+  font-family: ProximaNova-Regular, 'Lato', sans-serif;
+  padding: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  background: #666;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  left: 18%;
+  bottom: 55px;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
+}.locationButton:hover{
+  background: #000;
 }
 
 .intro{

@@ -70,8 +70,9 @@
 </a>
 
 <div class="box">
-	<a class="button" href="#graveMap"><img src="resources/icons/map.png"></a>
-  <a class="aboutButton" href="#book"><img src="resources/icons/about.png"></a>
+	<a class="button" href="#graveMap">Grave Map</a>
+  <a class="aboutButton" href="#book">History</a>
+  <a class="locationButton" href="#googleMap">Location</a>
 </div>
 
 <div id="graveMap" class="overlay">
@@ -88,6 +89,19 @@
 		<a class="close" href="#">&times;</a>
 		<div class="content">
 			<iframe src="resources/files/history.pdf"></iframe>
+		</div>
+	</div>
+</div>
+
+<div id="googleMap" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+			<div class="mapouter">
+				<div class="gmap_canvas">
+					<iframe src="https://maps.google.com/maps?q=St+John+Episcopal+Church/@40.735854,-73.152518,17616m/data=!3m1!1e3!4m13!1m7!3m6!1s0x89e835c49eee92a1:0x26784ed25c484c29!2s1+Berard+Blvd,+Oakdale,+NY+11769!3b1!8m2!3d40.735854!4d-73.1174994!3m4!1s0x89e835c49ef02e9f:0xd367155976b4382a!8m2!3d40.7355723!4d-73.1170294?hl=en-US&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" id="gmap_canvas" scrolling="no" frameborder="0">
+					</iframe>
+					<a href="https://fnftest.net" style="display:none">fnf test</a><style>.mapouter{position:relative;text-align:right;}</style><a href="https://googlemapsiframegenerator.com" style="display:none">Google Maps Iframe Generator - Free Html Embed Code</a><style>.gmap_canvas{overflow:hidden;background:none!important;height:750px;}</style></div></div>
 		</div>
 	</div>
 </div>
