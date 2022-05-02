@@ -158,24 +158,6 @@ var APP_DATA = {
         }
       ],
       "imageHotspots": [
-        {
-          "yaw": 1.45504400546002,
-          "pitch": -0.007021906781497833,
-          "title": "<div>Plaque</div>",
-          "img": "plaque"
-        },
-        {
-          "yaw": 0.21388879878420397,
-          "pitch": -0.022392020306838845,
-          "title": "Gazebo View<br>",
-          "img": "gazebo"
-        },
-        {
-          "yaw": -2.4613147647839817,
-          "pitch": 0.014653578657348731,
-          "title": "<div>Garden</div>",
-          "img": "garden"
-        }
       ]
     },
     {
@@ -229,24 +211,6 @@ var APP_DATA = {
         }
       ],
       "imageHotspots": [
-        {
-          "yaw": 1.45504400546002,
-          "pitch": -0.007021906781497833,
-          "title": "<div>Plaque</div>",
-          "img": "plaque"
-        },
-        {
-          "yaw": 0.21388879878420397,
-          "pitch": -0.022392020306838845,
-          "title": "Gazebo View<br>",
-          "img": "gazebo"
-        },
-        {
-          "yaw": -2.4613147647839817,
-          "pitch": 0.014653578657348731,
-          "title": "<div>Garden</div>",
-          "img": "garden"
-        }
       ]
     }
   ],
