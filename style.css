@@ -86,7 +86,7 @@ body.multiple-scenes.mobile #titleBar {
 #titleBar .sceneName {
   width: 150%;
   height: 100%;
-  line-height: 30px;
+  line-height: 45px;
   padding: 5px;
   background-color: #013A20;
   overflow: hidden;
