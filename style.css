@@ -505,9 +505,9 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .info-hotspot .info-hotspot-icon {
-  width: 80%;
-  height: 80%;
-  margin: 10%;
+  width: 70%;
+  height: 70%;
+  margin: 15%;
 }
 
 .info-hotspot .info-hotspot-title-wrapper {
@@ -893,8 +893,8 @@ body.view-control-buttons .viewControlButton {
 }
 .popup .close {
   position: absolute;
-  top: -15px;
-  right: -17px;
+  top: 45px;
+  right: 0px;
   transition: all 200ms;
   font-size: 50px;
   text-decoration: none;
