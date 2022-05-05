@@ -894,6 +894,46 @@ body.view-control-buttons .viewControlButton {
   overflow: hidden;
 }
 
+.locationButton{
+  font-size: 20px;
+  width: 2.75%;
+  font-family: ProximaNova-Regular, 'Lato', sans-serif;
+  padding: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  background: #3F3937;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  left: 2%;
+  bottom: 3%;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
+}.locationButton:hover{
+  background: #000;
+}
+
+.aboutButton{
+  font-size: 20px;
+  width: 2.75%;
+  font-family: ProximaNova-Regular, 'Lato', sans-serif;
+  padding: 10px;
+  padding-bottom: 8px;
+  color: #fff;
+  background: #5C6C6D;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  position: absolute;
+  left: 6.75%;
+  bottom: 3%;
+  box-shadow: 4px 4px rgba(0,0,0,.7);
+}.aboutButton:hover{
+  background: #000;
+}
+
 .button {
   font-size: 20px;
   font-family: ProximaNova-Regular, 'Lato', sans-serif;
@@ -901,7 +941,7 @@ body.view-control-buttons .viewControlButton {
   width: 2.75%;
   padding-bottom: 8px;
   color: #fff;
-  background: #44403F;
+  background: #9A9B68;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -913,46 +953,6 @@ body.view-control-buttons .viewControlButton {
   display: inline-block;
 }
 .button:hover {
-  background: #1E1514;
-}
-
-.aboutButton{
-  font-size: 20px;
-  width: 2.75%;
-  font-family: ProximaNova-Regular, 'Lato', sans-serif;
-  padding: 10px;
-  padding-bottom: 8px;
-  color: #fff;
-  background: #63A15F;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  position: absolute;
-  left: 6.75%;
-  bottom: 3%;
-  box-shadow: 4px 4px rgba(0,0,0,.7);
-}.aboutButton:hover{
-  background: #013A20;
-}
-
-.locationButton{
-  font-size: 20px;
-  width: 2.75%;
-  font-family: ProximaNova-Regular, 'Lato', sans-serif;
-  padding: 10px;
-  padding-bottom: 8px;
-  color: #fff;
-  background: #666;
-  text-decoration: none;
-  text-align: center;
-  cursor: pointer;
-  transition: all 0.3s ease-out;
-  position: absolute;
-  left: 2%;
-  bottom: 3%;
-  box-shadow: 4px 4px rgba(0,0,0,.7);
-}.locationButton:hover{
   background: #000;
 }
 
