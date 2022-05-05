@@ -381,6 +381,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   position: absolute;
   left: 100%;
   top: 14px; /* ( 60 - (16 + 2*8) ) / 2 */
+  font-size: 20px;
 
   margin-left: 3px;
 
@@ -693,7 +694,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   right: 0;
   width: auto;
   height: 50px;
-  background-color: #44403F;
+  background-color: #1E1514;
   opacity: 0;
   -webkit-transition: opacity 0.3s ease-in-out 0.2s;
   transition: opacity 0.3s ease-in-out 0.2s;
@@ -752,7 +753,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
   right: 0;
   width: 50px;
   height: 50px;
-  background-color: #1E1514;
+  background-color: #44403F;
   cursor: pointer;
 }
 
