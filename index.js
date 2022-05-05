@@ -339,6 +339,7 @@
     content.classList.add('info-hotspot-text');
     var slides = document.createElement('div');
     slides.classList.add('w3-content', 'w3-display-container');
+    slides.style.width = "90%";
     for(var i=1; i < hotspot.imgCount+1; i++){
       var imgBox = document.createElement('div');
       imgBox.classList.add('w3-display-container', 'mySlides');
