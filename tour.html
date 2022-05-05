@@ -9,6 +9,10 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<style>
+	.mySlides {display:none;}
+</style>
+
 <body class="multiple-scenes ">
 
 <div id="pano"></div>
@@ -70,10 +74,47 @@
 </a>
 
 <div class="box">
-	<a class="button" href="#graveMap">Grave Map</a>
-  <a class="aboutButton" href="#book">History</a>
-  <a class="locationButton" href="#googleMap">Location</a>
+  <a class="button" href="#graveMap"><img src="resources/icons/map.png">
+	<span class="tooltiptext">Grave Map</span>
+  </a>
+  <a class="aboutButton" href="#book"><img src="resources/icons/about.png">
+	<span class="tooltiptext">History</span>
+  </a>
+  <a class="locationButton" href="#googleMap"><img src="resources/icons/location.png">
+	<span class="tooltiptext">Location</span>
+  </a>
 </div>
+
+<script src="vendor/screenfull.min.js" ></script>
+<script src="vendor/bowser.min.js" ></script>
+<script src="vendor/marzipano.js" ></script>
+
+<script src="data.js"></script>
+<script src="index.js"></script>
+
+<script>
+	var slideIndex = [];
+	var targetID = null;
+	var slides = document.getElementsByClassName('w3-content w3-display-container');
+	for(var i = 0; i < slides.length; i++)
+	{
+		slides[i].firstChild.style.display = "block";
+		slideIndex[i] = 0;
+	}
+
+	function plusDivs(n) {
+	  	var source = event.currentTarget;
+	  	var x = source.parentNode.childNodes
+	  	var xLength = x.length-2;
+	  	slideIndex[source.id.substr(1)] += n;
+	  	if (slideIndex[source.id.substr(1)] > xLength-1) {slideIndex[source.id.substr(1)] = 0}
+	  	if (slideIndex[source.id.substr(1)] < 0) {slideIndex[source.id.substr(1)] = xLength-1}
+	  	for (var i = 0; i < xLength; i++) {
+			x[i].style.display = 'none';  
+	  		}
+	  x[slideIndex[source.id.substr(1)]].style.display = 'block';
+	}
+</script>
 
 <div id="graveMap" class="overlay">
 	<div class="popup">
@@ -112,7 +153,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Garden.jpeg">
+			<img src="resources/imgs/Image Hotspots/Garden.jpg">
 		</div>
 	</div>
 </div>
@@ -121,7 +162,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Plaque.jpeg">
+			<img src="resources/imgs/Image Hotspots/Plaque.jpg">
 		</div>
 	</div>
 </div>
@@ -130,7 +171,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Gazebo.webp">
+			<img src="resources/imgs/Image Hotspots/Gazebo.jpg">
 		</div>
 	</div>
 </div>
@@ -139,37 +180,73 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Memorial.webp">
+			<img src="resources/imgs/Image Hotspots/Memorial.jpg">
 		</div>
 	</div>
 </div>
 
-<script>
-	var slideIndex = 1;
-	showDivs(slideIndex);
-	
-	function plusDivs(n) {
-	  showDivs(slideIndex += n);
-	}
-	
-	function showDivs(n) {
-	  var i;
-	  var x = document.getElementsByClassName("mySlides");
-	  if (n > x.length) {slideIndex = 1}
-	  if (n < 1) {slideIndex = x.length}
-	  for (i = 0; i < x.length; i++) {
-		 x[i].style.display = "none";  
-	  }
-	  x[slideIndex-1].style.display = "block";  
-	}
-</script>
-
-<script src="vendor/screenfull.min.js" ></script>
-<script src="vendor/bowser.min.js" ></script>
-<script src="vendor/marzipano.js" ></script>
-
-<script src="data.js"></script>
-<script src="index.js"></script>
+<div class="preload">
+    <img src="resources/panels/front/snedecor/imgs/1.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/2.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/3.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/4.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/5.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/6.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/7.jpg"/>
+    <img src="resources/panels/front/snedecor/imgs/8.jpg"/>
+    <img src="resources/panels/front/terry/imgs/1.jpg"/>
+    <img src="resources/panels/front/terry/imgs/2.jpg"/>
+    <img src="resources/panels/front/terry/imgs/3.jpg"/>
+    <img src="resources/panels/front/terry/imgs/4.jpg"/>
+    <img src="resources/panels/front/terry/imgs/5.jpg"/>
+    <img src="resources/panels/front/terry/imgs/6.jpg"/>
+    <img src="resources/panels/front/terry/imgs/7.jpg"/>
+    <img src="resources/panels/front/terry/imgs/8.jpg"/>
+    <img src="resources/panels/front/terry/imgs/9.jpg"/>
+    <img src="resources/panels/front/terry/imgs/10.jpg"/>
+    <img src="resources/panels/front/terry/imgs/11.jpg"/>
+    <img src="resources/panels/front/terry/imgs/12.jpg"/>
+    <img src="resources/panels/front/terry/imgs/13.jpg"/>
+    <img src="resources/panels/front/terry/imgs/14.jpg"/>
+    <img src="resources/panels/front/terry/imgs/15.jpg"/>
+    <img src="resources/panels/front/terry/imgs/16.jpg"/>
+    <img src="resources/panels/front/terry/imgs/17.jpg"/>
+	<img src="resources/panels/inside/altar/imgs/1.jpg"/>
+    <img src="resources/panels/inside/altar/imgs/2.jpg"/>
+	<img src="resources/panels/inside/gallery/imgs/1.jpg"/>
+    <img src="resources/panels/inside/gallery/imgs/2.jpg"/>
+	<img src="resources/panels/back/edwards/imgs/1.jpg"/>
+    <img src="resources/panels/back/edwards/imgs/2.jpg"/>
+    <img src="resources/panels/back/edwards/imgs/3.jpg"/>
+    <img src="resources/panels/back/edwards/imgs/4.jpg"/>
+	<img src="resources/panels/back/ludlow/imgs/1.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/2.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/3.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/4.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/5.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/6.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/7.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/8.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/9.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/10.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/11.jpg"/>
+    <img src="resources/panels/back/ludlow/imgs/12.jpg"/>
+	<img src="resources/panels/back/mazurie/imgs/1.jpg"/>
+    <img src="resources/panels/back/mazurie/imgs/2.jpg"/>
+	<img src="resources/panels/back/nicoll/imgs/1.jpg"/>
+    <img src="resources/panels/back/nicoll/imgs/2.jpg"/>
+    <img src="resources/panels/back/nicoll/imgs/3.jpg"/>
+    <img src="resources/panels/back/nicoll/imgs/4.jpg"/>
+    <img src="resources/panels/back/nicoll/imgs/5.jpg"/>
+    <img src="resources/panels/back/nicoll/imgs/6.jpg"/>
+	<img src="resources/panels/back/price/imgs/1.jpg"/>
+    <img src="resources/panels/back/price/imgs/2.jpg"/>
+	<img src="resources/panels/back/terry/imgs/1.jpg"/>
+    <img src="resources/panels/back/terry/imgs/2.jpg"/>
+    <img src="resources/panels/back/terry/imgs/3.jpg"/>
+    <img src="resources/panels/back/terry/imgs/4.jpg"/>
+    <img src="resources/panels/back/terry/imgs/5.jpg"/>
+</div>
 
 </body>
 </html>

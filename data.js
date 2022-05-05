@@ -47,12 +47,16 @@ var APP_DATA = {
           "yaw": 2.215583611095317,
           "pitch": 0.14997575759649884,
           "title": "Snedecor Family<br>",
+          "imgPath": "resources/panels/front/snedecor/imgs",
+          "imgCount": 8,
           "text": "<br>"
         },
         {
           "yaw": -1.0259125131870235,
           "pitch": -0.01462544684946998,
           "title": "William Terry Family<br>",
+          "imgPath": "resources/panels/front/terry/imgs",
+          "imgCount": 17,
           "text": "<br>"
         }
       ],
@@ -118,36 +122,48 @@ var APP_DATA = {
           "yaw": -2.500867273919761,
           "pitch": -0.007108409667695881,
           "title": "Ludlow Family<br>",
+          "imgPath": "resources/panels/back/ludlow/imgs",
+          "imgCount": 12,
           "text": "<br>"
         },
         {
           "yaw": 3.1008290775575205,
           "pitch": 0.005598976777411835,
           "title": "Jeremiah Terry Family<br>",
+          "imgPath": "resources/panels/back/terry/imgs",
+          "imgCount": 5,
           "text": "<br>"
         },
         {
           "yaw": 2.4342743919351406,
           "pitch": -0.004510343775205428,
           "title": "Nicoll Family<br>",
+          "imgPath": "resources/panels/back/nicoll/imgs",
+          "imgCount": 6,
           "text": "<br>"
         },
         {
           "yaw": 1.8698869188589287,
           "pitch": 0.023611809222419566,
           "title": "William Mazurie<br>",
+          "imgPath": "resources/panels/back/mazurie/imgs",
+          "imgCount": 2,
           "text": "<br>"
         },
         {
           "yaw": -0.3404266653327621,
           "pitch": 0.025068765839055374,
           "title": "Penelope Price<br>",
+          "imgPath": "resources/panels/back/price/imgs",
+          "imgCount": 2,
           "text": "<br>"
         },
         {
           "yaw": -1.3025638544195388,
           "pitch": 0.062210008221597946,
           "title": "Sarah Jane Burgess Edwards<br>",
+          "imgPath": "resources/panels/back/edwards/imgs",
+          "imgCount": 4,
           "text": "<br>"
         }
       ],
@@ -201,12 +217,16 @@ var APP_DATA = {
           "yaw": 3.134921780192391,
           "pitch": 0.07856293802918302,
           "title": "The Altar",
+          "imgPath": "resources/panels/inside/altar/imgs",
+          "imgCount": 2,
           "text": "<br>"
         },
         {
           "yaw": -2.7197054240811465,
           "pitch": -0.5643676737882704,
           "title": "The Gallery",
+          "imgPath": "resources/panels/inside/gallery/imgs",
+          "imgCount": 2,
           "text": "<br>"
         }
       ],

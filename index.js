@@ -20,6 +20,7 @@
   var bowser = window.bowser;
   var screenfull = window.screenfull;
   var data = window.APP_DATA;
+  var buttonCounter = 0;
 
   // Grab elements from DOM.
   var panoElement = document.querySelector('#pano');
@@ -334,13 +335,38 @@
     header.appendChild(closeWrapper);
 
     // Create text element.
-    var text = document.createElement('div');
-    text.classList.add('info-hotspot-text');
-    text.innerHTML = hotspot.text;
+    var content = document.createElement('div');
+    content.classList.add('info-hotspot-text');
+    var slides = document.createElement('div');
+    slides.classList.add('w3-content', 'w3-display-container');
+    for(var i=1; i < hotspot.imgCount+1; i++){
+      var imgBox = document.createElement('div');
+      imgBox.classList.add('w3-display-container', 'mySlides');
+      var img = document.createElement('img');
+      img.setAttribute('src',hotspot.imgPath + '/' + i +'.jpg');
+      imgBox.appendChild(img);
+      slides.appendChild(imgBox);
+    }
+    var leftButton = document.createElement('button');
+    leftButton.classList.add('w3-button', 'w3-display-left', 'w3-black');
+    leftButton.setAttribute('onclick','plusDivs(-1)');
+    leftButton.id = 'l'+buttonCounter;
+    leftButton.innerHTML = '&#10094;'
+    var rightButton = document.createElement('button');
+    rightButton.classList.add('w3-button', 'w3-display-right', 'w3-black');
+    rightButton.setAttribute('onclick','plusDivs(1)');
+    rightButton.id = 'r'+buttonCounter;
+    rightButton.innerHTML = '&#10095;'
+    buttonCounter++;
+
+    slides.appendChild(leftButton);
+    slides.appendChild(rightButton);
+    content.appendChild(slides);
+
 
     // Place header and text into wrapper element.
     wrapper.appendChild(header);
-    wrapper.appendChild(text);
+    wrapper.appendChild(content);
 
     // Create a modal for the hotspot content to appear on mobile mode.
     var modal = document.createElement('div');
@@ -474,5 +500,4 @@
 
   // Display the initial scene.
   switchScene(scenes[0]);
-
 })();
