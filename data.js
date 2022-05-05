@@ -115,12 +115,6 @@ var APP_DATA = {
       ],
       "infoHotspots": [
         {
-          "yaw": 0.26469842234173946,
-          "pitch": 0.0593380063114477,
-          "title": "The Memorial<br>",
-          "text": "<br>"
-        },
-        {
           "yaw": -2.500867273919761,
           "pitch": -0.007108409667695881,
           "title": "Ludlow Family<br>",
@@ -158,6 +152,12 @@ var APP_DATA = {
         }
       ],
       "imageHotspots": [
+        {
+          "yaw": 0.26469842234173946,
+          "pitch": 0.0593380063114477,
+          "title": "The Memorial<br>",
+          "img": "tour.html#memorial"
+        }
       ]
     },
     {
