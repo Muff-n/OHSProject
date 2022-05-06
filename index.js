@@ -400,6 +400,7 @@
     content.appendChild(facts);
 
     //Create Living History
+    if(hotspot.speechCap.length != 0){    
     var history = document.createElement('div');
     var historyTitle = document.createElement('h2');
     historyTitle.innerHTML = "Living History";
@@ -434,6 +435,7 @@
     }
 
     content.appendChild(history);
+  }
 
 
     // Place header and text into wrapper element.
