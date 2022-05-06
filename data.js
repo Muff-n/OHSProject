@@ -271,7 +271,7 @@ var APP_DATA = {
           ],
           "speechCap":["Penelope"],
           "audioPath": "resources/panels/back/price/audio/",
-          "scripts": ["#penelope"]
+          "scripts": ["#price"]
         },
         {
           "yaw": -1.3025638544195388,
