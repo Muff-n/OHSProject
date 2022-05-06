@@ -334,27 +334,39 @@
     header.appendChild(titleWrapper);
     header.appendChild(closeWrapper);
 
-    // Create text element.
+    // Create slideshows.
     var content = document.createElement('div');
     content.classList.add('info-hotspot-text');
     var slides = document.createElement('div');
     slides.classList.add('w3-content', 'w3-display-container');
     slides.style.width = "90%";
+    slides.style.paddingTop = "5%";
+    slides.style.paddingBottom = "5%";
     for(var i=1; i < hotspot.imgCount+1; i++){
       var imgBox = document.createElement('div');
-      imgBox.classList.add('w3-display-container', 'mySlides');
+      imgBox.classList.add('w3-display-container', 'mySlides','fade');
+      var imgCounter = document.createElement('div');
+      imgCounter.classList.add('numbertext');
+      imgCounter.innerHTML = i + " / " + hotspot.imgCount;
+      imgBox.appendChild(imgCounter);
       var img = document.createElement('img');
       img.setAttribute('src',hotspot.imgPath + '/' + i +'.jpg');
+      if(hotspot.captions.length != 0){
+        var caption = document.createElement('div');
+        caption.classList.add('captiontext');
+        caption.innerHTML = hotspot.captions[i-1];
+        imgBox.appendChild(caption);
+      }
       imgBox.appendChild(img);
       slides.appendChild(imgBox);
     }
-    var leftButton = document.createElement('button');
-    leftButton.classList.add('w3-button', 'w3-display-left', 'w3-black');
+    var leftButton = document.createElement('a');
+    leftButton.classList.add('prev');
     leftButton.setAttribute('onclick','plusDivs(-1)');
     leftButton.id = 'l'+buttonCounter;
     leftButton.innerHTML = '&#10094;'
-    var rightButton = document.createElement('button');
-    rightButton.classList.add('w3-button', 'w3-display-right', 'w3-black');
+    var rightButton = document.createElement('a');
+    rightButton.classList.add('next');
     rightButton.setAttribute('onclick','plusDivs(1)');
     rightButton.id = 'r'+buttonCounter;
     rightButton.innerHTML = '&#10095;'
@@ -363,6 +375,65 @@
     slides.appendChild(leftButton);
     slides.appendChild(rightButton);
     content.appendChild(slides);
+
+    var facts = document.createElement('div');
+    var factsTitle = document.createElement('h2');
+    factsTitle.innerHTML = hotspot.title + " Facts";
+    factsTitle.style.color = "#000";
+    factsTitle.style.position = "relative";
+    factsTitle.style.paddingTop = "6%";
+    factsTitle.style.textAlign = "center";
+    factsTitle.style.fontFamily = "OrpheusPro-Bold, Linden Hill, serif";
+    factsTitle.style.textDecoration = "underline";
+    factsTitle.style.borderTop = "1px solid black";
+    facts.appendChild(factsTitle);
+    var factsList = document.createElement('ul');
+    factsList.classList.add('a');
+    //Create text stuff
+    for(var i = 0; i < hotspot.facts.length; i++){
+      var listItem  = document.createElement('li');
+      listItem.innerHTML = hotspot.facts[i];
+      factsList.appendChild(listItem);
+    }
+    facts.appendChild(factsList);
+    
+    content.appendChild(facts);
+
+    //Create Living History
+    var history = document.createElement('div');
+    var historyTitle = document.createElement('h2');
+    historyTitle.innerHTML = "Living History";
+    historyTitle.style.color = "#000";
+    historyTitle.style.position = "relative";
+    historyTitle.style.paddingTop = "6%";
+    historyTitle.style.textAlign = "center";
+    historyTitle.style.fontFamily = "OrpheusPro-Bold, Linden Hill, serif";
+    historyTitle.style.textDecoration = "underline";
+    historyTitle.style.borderTop = "1px solid black";
+    history.appendChild(historyTitle);
+
+    for(var i = 0; i < hotspot.speechCap.length; i++){
+      var container = document.createElement('figure');
+      var histCap = document.createElement('figcaption');
+      histCap.innerHTML = "Hear " + hotspot.speechCap[i] + " speak!";
+      var histAudio = document.createElement('audio');
+      histAudio.setAttribute("controls","");
+      var audioSource = document.createElement('source');
+      audioSource.setAttribute("src",hotspot.audioPath+(i+1)+".mp3");
+      audioSource.setAttribute("type","audio/mpeg");
+      histAudio.appendChild(audioSource);
+      var transcript = document.createElement('a');
+      var containerCap = document.createElement('figcaption');
+      transcript.setAttribute("href",hotspot.scripts[i]);
+      transcript.innerHTML = "Transcript";
+      containerCap.appendChild(transcript);
+      container.appendChild(histCap);
+      container.appendChild(histAudio);
+      container.appendChild(containerCap);
+      history.appendChild(container);
+    }
+
+    content.appendChild(history);
 
 
     // Place header and text into wrapper element.
