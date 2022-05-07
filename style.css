@@ -123,8 +123,6 @@ body.multiple-scenes.mobile #titleBar {
 
   margin-left: 3px;
 
-  font-size: 16px;
-
   max-width: 300px;
 
   padding: 8px 10px;
@@ -563,7 +561,7 @@ body.multiple-scenes.mobile #titleBar {
   width: 2.75%;
   padding-bottom: 8px;
   color: #fff;
-  background: #9B8270;
+  background: #9A9B68;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
@@ -806,7 +804,7 @@ audio {
   animation: rotate 3s linear infinite;
   position: absolute;
   top: 40%;
-  left: 50%;
+  left: 48%;
 }
 
 .circle {
@@ -822,7 +820,7 @@ audio {
 
 .circle:nth-child(2) {
   background-color: black;
-  border: 3px solid white;
+  border: 3px dotted white;
   animation-delay: 0.75s;
 }
 
