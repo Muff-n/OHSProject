@@ -840,3 +840,13 @@ audio {
   opacity: 0;
   transition: opacity 1s ease-in;
 }
+
+.scriptCap{
+  line-height: 10px;
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+.scriptCap:hover{
+  color: #63A15F;
+  text-decoration: underline;
+}
