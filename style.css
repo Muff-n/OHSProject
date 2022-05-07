@@ -803,15 +803,15 @@ audio {
   transform-origin: bottom center;
   animation: rotate 3s linear infinite;
   position: absolute;
-  top: 40%;
-  left: 48%;
+  top: 41.5%;
+  left: 46.5%;
 }
 
 .circle {
   display: inline-block;
   background-color: white;
-  height: 40px;
-  width: 40px;
+  height: 75px;
+  width: 75px;
   border-radius: 50%;
   transform: scale(0);
   animation: grow 1.5s linear infinite;
@@ -820,7 +820,7 @@ audio {
 
 .circle:nth-child(2) {
   background-color: black;
-  border: 3px dotted white;
+  border: 5px solid white;
   animation-delay: 0.75s;
 }
 
