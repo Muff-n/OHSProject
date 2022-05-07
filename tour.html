@@ -9,6 +9,12 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
+<div class="loader">
+	<div class="circle"></div>
+	<div class="circle"></div>
+</div>
+
+<section class="main">
 <body class="multiple-scenes">
 <div id="pano"></div>
 
@@ -258,4 +264,22 @@
 	</div>
 </div>
 </body>
+</section>
+
+<script>
+	const loader = document.querySelector('.loader');
+	const main = document.querySelector('.main');
+
+	function init() {
+  	setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.display = 'none';
+
+    main.style.display = 'block';
+    setTimeout(() => (main.style.opacity = 1), 50);
+  }, 5000);
+}
+init();
+</script>
+
 </html>
