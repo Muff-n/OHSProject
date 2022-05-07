@@ -9,89 +9,18 @@
 <link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-	.mySlides {display:none;}
-</style>
-
-<body class="multiple-scenes ">
-
+<body class="multiple-scenes">
 <div id="pano"></div>
-
-<div id="sceneList">
-  <ul class="scenes">
-    
-      <a href="javascript:void(0)" class="scene" data-id="0-church-exterior-front">
-        <li class="text">Church Exterior (Front)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="1-church-exterior-back">
-        <li class="text">Church Exterior (Back)</li>
-      </a>
-    
-      <a href="javascript:void(0)" class="scene" data-id="2-church-interior">
-        <li class="text">Church Interior</li>
-      </a>
-    
-  </ul>
-</div>
 
 <div id="titleBar">
   <h1 class="sceneName"></h1>
 </div>
 
-<a href="javascript:void(0)" id="autorotateToggle">
-  <img class="icon off" src="img/play.png">
-  <img class="icon on" src="img/pause.png">
-</a>
-
-<a href="javascript:void(0)" id="fullscreenToggle">
-  <img class="icon off" src="img/fullscreen.png">
-  <img class="icon on" src="img/windowed.png">
-</a>
-
-<a href="javascript:void(0)" id="sceneListToggle">
-  <img class="icon off" src="img/expand.png">
-  <img class="icon on" src="img/collapse.png">
-</a>
-
-<a href="javascript:void(0)" id="viewUp" class="viewControlButton viewControlButton-1">
-  <img class="icon" src="img/up.png">
-</a>
-<a href="javascript:void(0)" id="viewDown" class="viewControlButton viewControlButton-2">
-  <img class="icon" src="img/down.png">
-</a>
-<a href="javascript:void(0)" id="viewLeft" class="viewControlButton viewControlButton-3">
-  <img class="icon" src="img/left.png">
-</a>
-<a href="javascript:void(0)" id="viewRight" class="viewControlButton viewControlButton-4">
-  <img class="icon" src="img/right.png">
-</a>
-<a href="javascript:void(0)" id="viewIn" class="viewControlButton viewControlButton-5">
-  <img class="icon" src="img/plus.png">
-</a>
-<a href="javascript:void(0)" id="viewOut" class="viewControlButton viewControlButton-6">
-  <img class="icon" src="img/minus.png">
-</a>
-
-<div class="box">
-  <a class="button" href="#graveMap"><img src="resources/icons/map.png">
-	<span class="tooltiptext">Grave Map</span>
-  </a>
-  <a class="aboutButton" href="#book"><img src="resources/icons/about.png">
-	<span class="tooltiptext">History</span>
-  </a>
-  <a class="locationButton" href="#googleMap"><img src="resources/icons/location.png">
-	<span class="tooltiptext">Location</span>
-  </a>
-</div>
-
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
-
 <script src="data.js"></script>
 <script src="index.js"></script>
-
 <script>
 	var slideIndex = [];
 	var targetID = null;
@@ -116,11 +45,23 @@
 	}
 </script>
 
+<div class="box">
+	<a class="button" href="#graveMap"><img src="resources/icons/map.png">
+	  <span class="tooltiptext">Grave Map</span>
+	</a>
+	<a class="aboutButton" href="#book"><img src="resources/icons/about.png">
+	  <span class="tooltiptext">History</span>
+	</a>
+	<a class="locationButton" href="#googleMap"><img src="resources/icons/location.png">
+	  <span class="tooltiptext">Location</span>
+	</a>
+</div>
+
 <div id="graveMap" class="overlay">
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/GraveMap.png">
+			<img src="resources/imgs/grave-map.png">
 		</div>
 	</div>
 </div>
@@ -153,7 +94,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Garden.jpg">
+			<img src="resources/imgs/image-hotspots/garden.jpg">
 		</div>
 	</div>
 </div>
@@ -162,7 +103,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Plaque.jpg">
+			<img src="resources/imgs/image-hotspots/plaque.jpg">
 		</div>
 	</div>
 </div>
@@ -171,7 +112,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Gazebo.jpg">
+			<img src="resources/imgs/image-hotspots/gazebo.jpg">
 		</div>
 	</div>
 </div>
@@ -180,7 +121,7 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<img src="resources/imgs/Image Hotspots/Memorial.jpg">
+			<img src="resources/imgs/image-hotspots/memorial.jpg">
 		</div>
 	</div>
 </div>
@@ -233,8 +174,8 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<object data="resources/files/sarahEdwards.pdf" type="application/pdf">
-				<iframe src="https://docs.google.com/viewer?url=resources/files/sarahEdwards.pdf&embedded=true"></iframe>
+			<object data="resources/files/sarah-edwards.pdf" type="application/pdf">
+				<iframe src="https://docs.google.com/viewer?url=resources/files/sarah-edwards.pdf&embedded=true"></iframe>
 			</object>
 		</div>
 	</div>
@@ -244,8 +185,8 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<object data="resources/files/williamHandy.pdf" type="application/pdf">
-				<iframe src="https://docs.google.com/viewer?url=resources/files/williamHandy.pdf&embedded=true"></iframe>
+			<object data="resources/files/william-handy.pdf" type="application/pdf">
+				<iframe src="https://docs.google.com/viewer?url=resources/files/william-handy.pdf&embedded=true"></iframe>
 			</object>
 		</div>
 	</div>
@@ -255,8 +196,8 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<object data="resources/files/williamLudlow.pdf" type="application/pdf">
-				<iframe src="https://docs.google.com/viewer?url=resources/files/williamLudlow.pdf&embedded=true"></iframe>
+			<object data="resources/files/william-ludlow.pdf" type="application/pdf">
+				<iframe src="https://docs.google.com/viewer?url=resources/files/william-ludlow.pdf&embedded=true"></iframe>
 			</object>
 		</div>
 	</div>
@@ -277,8 +218,8 @@
 	<div class="popup">
 		<a class="close" href="#">&times;</a>
 		<div class="content">
-			<object data="resources/files/sarahAugusta.pdf" type="application/pdf">
-				<iframe src="https://docs.google.com/viewer?url=resources/files/sarahAugusta.pdf&embedded=true"></iframe>
+			<object data="resources/files/sarah-augusta.pdf" type="application/pdf">
+				<iframe src="https://docs.google.com/viewer?url=resources/files/sarah-augusta.pdf&embedded=true"></iframe>
 			</object>
 		</div>
 	</div>
@@ -316,69 +257,5 @@
 		</div>
 	</div>
 </div>
-
-<div class="preload">
-    <img src="resources/panels/front/snedecor/imgs/1.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/2.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/3.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/4.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/5.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/6.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/7.jpg"/>
-    <img src="resources/panels/front/snedecor/imgs/8.jpg"/>
-    <img src="resources/panels/front/terry/imgs/1.jpg"/>
-    <img src="resources/panels/front/terry/imgs/2.jpg"/>
-    <img src="resources/panels/front/terry/imgs/3.jpg"/>
-    <img src="resources/panels/front/terry/imgs/4.jpg"/>
-    <img src="resources/panels/front/terry/imgs/5.jpg"/>
-    <img src="resources/panels/front/terry/imgs/6.jpg"/>
-    <img src="resources/panels/front/terry/imgs/7.jpg"/>
-    <img src="resources/panels/front/terry/imgs/8.jpg"/>
-    <img src="resources/panels/front/terry/imgs/9.jpg"/>
-    <img src="resources/panels/front/terry/imgs/10.jpg"/>
-    <img src="resources/panels/front/terry/imgs/11.jpg"/>
-    <img src="resources/panels/front/terry/imgs/12.jpg"/>
-    <img src="resources/panels/front/terry/imgs/13.jpg"/>
-    <img src="resources/panels/front/terry/imgs/14.jpg"/>
-    <img src="resources/panels/front/terry/imgs/15.jpg"/>
-    <img src="resources/panels/front/terry/imgs/16.jpg"/>
-    <img src="resources/panels/front/terry/imgs/17.jpg"/>
-	<img src="resources/panels/inside/altar/imgs/1.jpg"/>
-    <img src="resources/panels/inside/altar/imgs/2.jpg"/>
-	<img src="resources/panels/inside/gallery/imgs/1.jpg"/>
-    <img src="resources/panels/inside/gallery/imgs/2.jpg"/>
-	<img src="resources/panels/back/edwards/imgs/1.jpg"/>
-    <img src="resources/panels/back/edwards/imgs/2.jpg"/>
-    <img src="resources/panels/back/edwards/imgs/3.jpg"/>
-    <img src="resources/panels/back/edwards/imgs/4.jpg"/>
-	<img src="resources/panels/back/ludlow/imgs/1.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/2.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/3.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/4.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/5.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/6.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/7.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/8.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/9.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/10.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/11.jpg"/>
-    <img src="resources/panels/back/ludlow/imgs/12.jpg"/>
-	<img src="resources/panels/back/mazurie/imgs/1.jpg"/>
-    <img src="resources/panels/back/mazurie/imgs/2.jpg"/>
-	<img src="resources/panels/back/nicoll/imgs/1.jpg"/>
-    <img src="resources/panels/back/nicoll/imgs/2.jpg"/>
-    <img src="resources/panels/back/nicoll/imgs/3.jpg"/>
-    <img src="resources/panels/back/nicoll/imgs/4.jpg"/>
-    <img src="resources/panels/back/nicoll/imgs/5.jpg"/>
-    <img src="resources/panels/back/nicoll/imgs/6.jpg"/>
-	<img src="resources/panels/back/price/imgs/1.jpg"/>
-    <img src="resources/panels/back/price/imgs/2.jpg"/>
-	<img src="resources/panels/back/terry/imgs/1.jpg"/>
-    <img src="resources/panels/back/terry/imgs/2.jpg"/>
-    <img src="resources/panels/back/terry/imgs/3.jpg"/>
-    <img src="resources/panels/back/terry/imgs/4.jpg"/>
-    <img src="resources/panels/back/terry/imgs/5.jpg"/>
-</div>
-
 </body>
 </html>
