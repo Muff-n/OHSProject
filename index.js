@@ -270,8 +270,18 @@
 
     for(var i = 0; i < hotspot.speechCap.length; i++){
       var container = document.createElement('figure');
+      container.style.border = "1px solid black";
+      container.style.borderRadius = "70px";
+      container.style.position = "relative";
+      container.style.top = "25px";
+      if(i == 1){
+        container.style.top = "50px";
+      }
       var histCap = document.createElement('figcaption');
       histCap.innerHTML = "Hear " + hotspot.speechCap[i] + " speak!";
+      histCap.style.paddingTop = "5px";
+      histCap.style.paddingBottom = "2%";
+      histCap.style.fontWeight = "bold";
       var histAudio = document.createElement('audio');
       histAudio.setAttribute("controls","");
       var audioSource = document.createElement('source');
@@ -282,6 +292,7 @@
       var containerCap = document.createElement('figcaption');
       transcript.setAttribute("href",hotspot.scripts[i]);
       transcript.innerHTML = "Transcript";
+      transcript.classList.add('scriptCap');
       containerCap.appendChild(transcript);
       container.appendChild(histCap);
       container.appendChild(histAudio);
