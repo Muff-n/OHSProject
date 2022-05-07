@@ -251,6 +251,7 @@
     factsTitle.style.fontFamily = "OrpheusPro-Bold, Linden Hill, serif";
     factsTitle.style.textDecoration = "underline";
     factsTitle.style.borderTop = "1px solid black";
+    factsTitle.style.fontSize = "24px";
     facts.appendChild(factsTitle);
     var factsList = document.createElement('ul');
     factsList.classList.add('a');
@@ -276,6 +277,7 @@
     historyTitle.style.fontFamily = "OrpheusPro-Bold, Linden Hill, serif";
     historyTitle.style.textDecoration = "underline";
     historyTitle.style.borderTop = "1px solid black";
+    historyTitle.style.fontSize = "24px";
     history.appendChild(historyTitle);
 
     for(var i = 0; i < hotspot.speechCap.length; i++){
