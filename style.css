@@ -800,34 +800,22 @@ audio {
 
 .loader {
   height: 50px;
-  transform-origin: bottom center;
-  animation: rotate 3s linear infinite;
+  transform-origin: center;
   position: absolute;
-  top: 41.5%;
-  left: 46.5%;
+  top: 45%;
+  left: calc(50% - 75px);
 }
 
 .circle {
   display: inline-block;
-  background-color: white;
-  height: 75px;
-  width: 75px;
+  background-color: black;
+  border: 5px dotted white;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   transform: scale(0);
   animation: grow 1.5s linear infinite;
   margin: -10px;
-}
-
-.circle:nth-child(2) {
-  background-color: black;
-  border: 5px solid white;
-  animation-delay: 0.75s;
-}
-
-@keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 @keyframes grow {
